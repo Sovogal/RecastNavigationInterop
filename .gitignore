@@ -53,3 +53,7 @@ build
 ## IDE files
 .idea/
 cmake-build-*/
+/Detour/.vs/Detour/v17
+/Recast/.vs/Recast/v17
+/Recast/.vs/Recast/FileContentIndex
+/Detour/.vs/Detour/FileContentIndex
