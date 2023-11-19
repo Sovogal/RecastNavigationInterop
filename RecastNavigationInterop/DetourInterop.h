@@ -3,12 +3,7 @@
 #include "DetourNavMeshBuilder.h"
 #include "DetourNavMeshQuery.h"
 
-#ifdef DetourExport
 #define DETOUR_INT __declspec(dllexport)
-#else
-#define DETOUR_INT __declspec(dllimport)
-#endif
-
 
 extern "C" {
 

@@ -1,11 +1,7 @@
 #pragma once
 #include "DetourNavMeshQuery.h"
 
-#ifdef DetourExport
 #define DETOUR_INT __declspec(dllexport)
-#else
-#define DETOUR_INT __declspec(dllimport)
-#endif
 
 extern "C" {
 	/// Initializes the query object.
@@ -336,7 +332,7 @@ extern "C" {
 	///  @param[in]		pos			A position within the xz-bounds of the polygon. [(x, y, z)]
 	///  @param[out]	height		The height at the surface of the polygon.
 	/// @returns The status flags for the query.
-	DETOUR_INT DETOUR_INT dtStatus dtNavMeshQuery_getPolyHeight(dtNavMeshQuery* query, dtPolyRef ref, const float* pos, float* height);
+	DETOUR_INT dtStatus dtNavMeshQuery_getPolyHeight(dtNavMeshQuery* query, dtPolyRef ref, const float* pos, float* height);
 
 	/// @}
 	/// @name Miscellaneous Functions

@@ -19,12 +19,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Agent.h" />
     <ClInclude Include="DetourInterop.h" />
     <ClInclude Include="dtNavMeshInterop.h" />
     <ClInclude Include="dtNavMeshQueryInterop.h" />
     <ClInclude Include="RecastInterop.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Agent.cpp" />
     <ClCompile Include="DetourInterop.cpp" />
     <ClCompile Include="dtNavMeshInterop.cpp" />
     <ClCompile Include="dtNavMeshQueryInterop.cpp" />

@@ -1,4 +1,5 @@
 #include "DetourNavMeshQuery.h"
+#include "dtNavMeshQueryInterop.h"
 
 dtStatus dtNavMeshQuery_init(dtNavMeshQuery* query, const dtNavMesh* nav, int maxNodes) 
 {

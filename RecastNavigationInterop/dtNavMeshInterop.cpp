@@ -1,4 +1,5 @@
 #include "DetourNavMesh.h"
+#include "dtNavMeshInterop.h"
 
 dtStatus dtNavMesh_init(dtNavMesh* mesh, const dtNavMeshParams* params)
 {
@@ -59,10 +60,6 @@ int dtNavMesh_getMaxTiles(dtNavMesh* mesh)
 {
 	return mesh->getMaxTiles();
 }
-
-//const dtMeshTile* dtNavMesh_getTile(dtNavMesh* mesh, int i) {
-//	return mesh->getTile(i);
-//}
 
 dtStatus dtNavMesh_getTileAndPolyByRef(dtNavMesh* mesh, dtPolyRef ref, const dtMeshTile** tile, const dtPoly** poly) 
 {

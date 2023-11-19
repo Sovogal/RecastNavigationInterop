@@ -1,12 +1,7 @@
 #pragma once
 #include "Recast.h"
 
-#ifdef RecastExport
 #define RECAST_INT __declspec(dllexport)
-#else
-#define RECAST_INT __declspec(dllimport)
-#endif
-
 
 extern "C" {
 
